@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Statistics Table</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css"
+            integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css"
+            integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="d-flex align-items-center mt-4 mb-4 table-header">
+                <h1 class="m-0 flex-grow-1">Milk Brands Table</h1>
+                <input type="text" class="form-control datepicker" />
+            </div>
+            <table
+                id="dataTable"
+                class="table display nowrap"
+                style="width: 100%"
+            >
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Brands</th>
+                        <th scope="col">Saturday</th>
+                        <th scope="col">Sunday</th>
+                        <th scope="col">Monday</th>
+                        <th scope="col">Tuesday</th>
+                        <th scope="col">Wednesday</th>
+                        <th scope="col">Thursday</th>
+                        <th scope="col">Friday</th>
+                        <th scope="col">Totals</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Borden</th>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        <td class="mon"></td>
+                        <td class="tues"></td>
+                        <td class="wed"></td>
+                        <td class="thurs"></td>
+                        <td class="fri"></td>
+                        <td class="font-weight-bold"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Organic Valley Beverages</th>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        <td class="mon"></td>
+                        <td class="tues"></td>
+                        <td class="wed"></td>
+                        <td class="thurs"></td>
+                        <td class="fri"></td>
+                        <td class="font-weight-bold"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Horizon</th>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        <td class="mon"></td>
+                        <td class="tues"></td>
+                        <td class="wed"></td>
+                        <td class="thurs"></td>
+                        <td class="fri"></td>
+                        <td class="font-weight-bold"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dairyland</th>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        <td class="mon"></td>
+                        <td class="tues"></td>
+                        <td class="wed"></td>
+                        <td class="thurs"></td>
+                        <td class="fri"></td>
+                        <td class="font-weight-bold"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Whole Foods Market</th>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        <td class="mon"></td>
+                        <td class="tues"></td>
+                        <td class="wed"></td>
+                        <td class="thurs"></td>
+                        <td class="fri"></td>
+                        <td class="font-weight-bold"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Dean Foods</th>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        <td class="mon"></td>
+                        <td class="tues"></td>
+                        <td class="wed"></td>
+                        <td class="thurs"></td>
+                        <td class="fri"></td>
+                        <td class="font-weight-bold"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Hood</th>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        <td class="mon"></td>
+                        <td class="tues"></td>
+                        <td class="wed"></td>
+                        <td class="thurs"></td>
+                        <td class="fri"></td>
+                        <td class="font-weight-bold"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Amul</th>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        <td class="mon"></td>
+                        <td class="tues"></td>
+                        <td class="wed"></td>
+                        <td class="thurs"></td>
+                        <td class="fri"></td>
+                        <td class="font-weight-bold"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Promised Land</th>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        <td class="mon"></td>
+                        <td class="tues"></td>
+                        <td class="wed"></td>
+                        <td class="thurs"></td>
+                        <td class="fri"></td>
+                        <td class="font-weight-bold"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Stonyfield Farm</th>
+                        <td class="sat"></td>
+                        <td class="sun"></td>
+                        <td class="mon"></td>
+                        <td class="tues"></td>
+                        <td class="wed"></td>
+                        <td class="thurs"></td>
+                        <td class="fri"></td>
+                        <td class="font-weight-bold"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th>Total</th>
+                    <td class="total"></td>
+                    <td class="total"></td>
+                    <td class="total"></td>
+                    <td class="total"></td>
+                    <td class="total"></td>
+                    <td class="total"></td>
+                    <td class="total"></td>
+                    <td class="font-weight-bold text-primary all-totals"></td>
+                </tfoot>
+            </table>
+            <div class="text-center">
+                <button class="btn btn-primary hide-precent">
+                    Hide Percentage
+                </button>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-md-6">
+                    <div
+                        id="barChart"
+                        style="min-width: 310px; height: 400px; margin: 0 auto"
+                    ></div>
+                </div>
+
+                <div class="col-md-6">
+                    <div
+                        id="pieChart"
+                        style="min-width: 310px; height: 400px; margin: 0 auto"
+                    ></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Javascript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+        <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/data.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="charts.js"></script>
+
+        <script>
+            $(function() {
+                $(".datepicker").datepicker({
+                    defaultDate: "+1w",
+                    changeMonth: true,
+                    changeYear: true,
+                    dateFormat: "dd/mm/yy",
+                    yearRange: "-100:+0",
+                    numberOfMonths: 1,
+                    showOn: "both",
+                    buttonText: "Select date"
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function() {
+                $("#dataTable").DataTable({
+                    paging: false,
+                    info: false,
+                    responsive: true,
+                    searching: false,
+                    columnDefs: [
+                        { responsivePriority: 1, targets: 0 },
+                        { responsivePriority: 2, targets: -1 }
+                    ]
+                });
+            });
+        </script>
+        <script>
+            $(".hide-precent").on("click", function() {
+                var button = $(this);
+                button.text(
+                    button.text().trim() === "Hide Percentage"
+                        ? "Show Percentage"
+                        : "Hide Percentage"
+                );
+                $(".table .percentage").toggle();
+            });
+
+            $(".table td").each(function() {
+                $(this).html(
+                    '<span class="value">' +
+                        Math.floor(Math.random() * 1000) +
+                        "</span>" +
+                        ' <span class="percentage text-info">(' +
+                        Math.floor(Math.random() * 1000) / 100 +
+                        ")%</span>"
+                );
+            });
+
+            var sats = [];
+            var suns = [];
+            var mons = [];
+            var tueses = [];
+            var weds = [];
+            var thurses = [];
+            var fris = [];
+            var totals = [];
+
+            $(".table .sat").each(function() {
+                var value = $(this)
+                    .find(".value")
+                    .text();
+                sats.push(parseFloat(value));
+            });
+
+            $(".table .sun").each(function() {
+                var value = $(this)
+                    .find(".value")
+                    .text();
+                suns.push(parseFloat(value));
+            });
+
+            $(".table .mon").each(function() {
+                var value = $(this)
+                    .find(".value")
+                    .text();
+                mons.push(parseFloat(value));
+            });
+
+            $(".table .tues").each(function() {
+                var value = $(this)
+                    .find(".value")
+                    .text();
+                tueses.push(parseFloat(value));
+            });
+
+            $(".table .wed").each(function() {
+                var value = $(this)
+                    .find(".value")
+                    .text();
+                weds.push(parseFloat(value));
+            });
+
+            $(".table .thurs").each(function() {
+                var value = $(this)
+                    .find(".value")
+                    .text();
+                thurses.push(parseFloat(value));
+            });
+
+            $(".table .fri").each(function() {
+                var value = $(this)
+                    .find(".value")
+                    .text();
+                fris.push(parseFloat(value));
+            });
+
+            var totalSats = sats.reduce((current, total) => {
+                return current + total;
+            }, 0);
+
+            var totalSuns = suns.reduce((current, total) => {
+                return current + total;
+            }, 0);
+
+            var totalMons = mons.reduce((current, total) => {
+                return current + total;
+            }, 0);
+
+            var totalTueses = tueses.reduce((current, total) => {
+                return current + total;
+            }, 0);
+
+            var totalWeds = weds.reduce((current, total) => {
+                return current + total;
+            }, 0);
+
+            var totalThurses = thurses.reduce((current, total) => {
+                return current + total;
+            }, 0);
+
+            var totalFris = fris.reduce((current, total) => {
+                return current + total;
+            }, 0);
+
+            totalSums = [
+                totalSats,
+                totalSuns,
+                totalMons,
+                totalTueses,
+                totalWeds,
+                totalThurses,
+                totalFris
+            ];
+            tds = [];
+
+            var totalTotals = totalSums.reduce((current, total) => {
+                return current + total;
+            }, 0);
+
+            $(".table tfoot td").each(function() {
+                tds.push($(this));
+            });
+
+            for (i = 0; i <= totalSums.length; i++) {
+                $(tds[i]).text(totalSums[i]);
+            }
+
+            $(".table .all-totals").text(totalTotals);
+        </script>
+    </body>
+</html>
